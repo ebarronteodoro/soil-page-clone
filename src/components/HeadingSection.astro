@@ -1,0 +1,63 @@
+---
+import Bed from "./icons/Bed.astro";
+import Cube from "./icons/Cube.astro";
+import Coins from "./icons/Coins.astro";
+---
+
+<section
+  class="h-dvh mt-[108px] w-full max-h-[600px] flex flex-col items-center justify-center gap-14 relative animate-fade animate-delay-[1000ms]"
+>
+  <picture class="-mt-14">
+    <img
+      src="/assets/natturale_white_logo.png"
+      alt="Soil Logo Blanco"
+      class="w-52 h-auto max-w-full"
+    />
+  </picture>
+  <h2 class="font-rossanova text-5xl">Disfruta de tu independencia</h2>
+  <div
+    class="absolute bottom-[6%] flex flex-col md:flex-row w-full max-w-[1140px] animate-fade-up animate-delay-[3000ms]"
+  >
+    <div
+      class="w-full md:w-[33.333%] px-12 shadow-2xl rounded-l-xl bg-white py-7 flex flex-col gap-2"
+    >
+      <h3 class="text-[#55AB69] text-xl font-rossanova">Dormitorios</h3>
+      <span
+        class="text-black text-xl font-rossanovaMedium font-semibold flex items-center gap-1"
+      >
+        <Bed />
+        1, 2 y 3 dormitorios
+      </span>
+    </div>
+    <div
+      class="w-full md:w-[33.333%] px-12 shadow-2xl bg-white py-7 flex flex-col gap-2"
+    >
+      <h3 class="text-[#55AB69] text-xl font-rossanova">Espacios Amplios</h3>
+      <span
+        class="text-black text-xl font-rossanovaMedium font-semibold flex items-center gap-1"
+      >
+        <Cube />
+        Hasta 77m2
+      </span>
+    </div>
+    <div
+      class="w-full md:w-[33.333%] px-12 shadow-2xl rounded-r-xl bg-white py-7 flex flex-col gap-2"
+    >
+      <h3 class="text-[#55AB69] text-xl font-rossanova">Precio Desde</h3>
+      <span
+        class="text-black text-xl font-rossanovaMedium font-semibold flex items-center gap-1"
+      >
+        <Coins />
+        1, 2 y 3 dormitorios
+      </span>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: url(assets/lounge-bar-slider-2-1.webp);
+    background-position: center center;
+    background-size: cover;
+  }
+</style>

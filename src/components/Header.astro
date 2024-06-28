@@ -1,0 +1,55 @@
+---
+import NavComponent from "./NavComponent.astro";
+const components = [
+  {
+    text: "Proyecto",
+    href: "#proyecto",
+  },
+  {
+    text: "Vista 360",
+    href: "#vista360",
+  },
+  {
+    text: "Galería",
+    href: "#galeria",
+  },
+  {
+    text: "Ubicación",
+    href: "#ubicacion",
+  },
+  {
+    text: "Planos",
+    href: "#cotiza",
+  },
+];
+---
+
+<header
+  class="w-dvw h-[108px] fixed z-[9999] top-0 left-0 right-0 transition bg-[#54745F] flex justify-center"
+>
+  <nav class="flex items-center h-full w-full justify-evenly max-w-screen-xl">
+    <picture class="w-36 h-auto flex justify-center">
+      <img
+        src="/assets/natturale_white_logo.png"
+        alt="Soil Logo"
+        loading="lazy"
+        class="w-4/5 max-w-[80%]"
+        title="Soil Pueblo Libre"
+      /></picture
+    >
+    <ul class="flex justify-center flex-wrap w-fit">
+      {
+        components.map((component) => (
+          <li>
+            <NavComponent href={component.href}>{component.text}</NavComponent>
+          </li>
+        ))
+      }
+    </ul>
+    <a
+      href="#cotiza"
+      class="font-amina bg-[#F09F54] hover:bg-[#436F54] px-10 py-4 transition duration-300 rounded-[100px]"
+      >Cotización</a
+    >
+  </nav>
+</header>
